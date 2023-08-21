@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,178 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <!-- The button to open modal -->
-<a href="#my_modal_8" class="btn">open modal</a>
-<!-- Put this part before </body> tag -->
-<div class="modal" id="my_modal_8">
-  <div class="modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">This modal works with anchor links</p>
-    <div class="modal-action">
-     <a href="#" class="btn">Yay!</a>
+  <!-- main section -->
+  <div class="w-[90%] mx-auto gap-6 flex flex-col lg:flex-row ">
+    <div id="left-side" class="w-[70%] ">
+      <!-- kitchenware -->
+      <div>
+        <h1 class="text-3xl font-bold mb-3 text-center lg:text-left">Kitchenware</h1>
+        <div class="mb-14 w-full mx-auto flex flex-col lg:flex-row gap-6">
+          <!-- Kitchenware card 1 -->
+          <div class="card w-full shadow-xl" onclick="clickHandler('k1-taka','card1-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod1.png" alt="Shoes" class="rounded-xl text-center " />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card1-title">K. Accessories</h2>
+              <p class=""><span id="k1-taka">39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Kitchenware card 2 -->
+          <div class="card w-full shadow-xl" id="card-2" onclick="clickHandler('k2-taka','card2-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod2.png" alt="Shoes" class="rounded-xl text-center" />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card2-title">K. Accessories</h2>
+              <p class=""><span id="k2-taka">25.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Kitchenware card 3 -->
+          <div class="card w-full shadow-xl" onclick="clickHandler('k3-taka', 'card3-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod3.png" alt="Shoes" class="rounded-xl text-center" />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card3-title">Home Cooker</h2>
+              <p class=""><span id="k3-taka">49.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sports ware -->
+      <div>
+        <h1 class="text-3xl font-bold mb-3 text-center lg:text-left">Sportsware</h1>
+        <div class="mb-14 w-full mx-auto flex flex-col lg:flex-row gap-6">
+          <!-- card 4 -->
+          <div class="card w-full shadow-xl" onclick="clickHandler('k4-taka','card4-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod4.png" alt="Shoes" class="rounded-xl text-center " />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card4-title">Sports Back Cap</h2>
+              <p class=""><span id="k4-taka">49.00</span> TK</p>
+            </div>
+          </div>
+          <!--  card 5 -->
+          <div class="card w-full shadow-xl" id="card-5" onclick="clickHandler('k5-taka','card5-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod5.png" alt="Shoes" class="rounded-xl text-center" />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card5-title">Full Jersey Set</h2>
+              <p class=""><span id="k5-taka">69.00</span> TK</p>
+            </div>
+          </div>
+          <!--  card 6 -->
+          <div class="card w-full shadow-xl" onclick="clickHandler('k6-taka', 'card6-title')">
+            <div class=" bg-base-200 mx-3 mt-5 px-24 py-8 h-full">
+              <img src="./images/prod6.png" alt="Shoes" class="rounded-xl text-center" />
+            </div>
+            <div class="card-body items-center text-center">
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <h2 class="card-title" id="card6-title">Sports cates</h2>
+              <p class=""><span id="k6-taka">159.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- cart section -->
+    <div class="flex flex-col gap-6">
+      <!-- input group -->
+      <div class="bg-slate-100 p-5">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold text-2xl">Have coupon?</span>
+          </label>
+          <label class="input-group">
+            <input id="couponInput" type="text" placeholder="Coupon code" class="input input-bordered" />
+            <!-- bg-[#E527B2] text-white -->
+            <button id="applyButton" class="btn bg-[#E527B2] text-white px-5" disabled>Apply</button>
+          </label>
+        </div>
+      </div>
+      <!-- input group ends -->
+      <!-- calculations -->
+      <div class="bg-slate-100 p-5 ">
+        <div id="p-list" class="mb-5">
+
+        </div>
+        <hr>
+        <h1 class="mt-5">Total Price: <span id="total-price">00</span> TK</h1>
+        <h1>Discount: <span id="discount">00</span> TK</h1>
+        <h1 class="mb-5">Total: <span id="total">00</span> TK</h1>
+        <hr>
+        <button onclick="my_modal_5.showModal()" id="make-purchase" class="btn bg-[#E527B2] w-72 text-white mt-5"
+          disabled>Make Purchase</button>
+      </div>
     </div>
   </div>
-</div>
+  <!-- Modal -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <form method="dialog" class="modal-box text-center">
+      <div class="flex flex-col items-center justify-center">
+        <img src="./images/congo.png" alt="" class="mx-auto my-4" class="max-w-full h-auto">
+        <h3 class="font-bold text-lg">Congratulations</h3>
+        <p class="py-4">You purchased the product</p>
+        <button class="btn bg-[#E527B2] text-white" onclick="window.location.href = 'index.html';">Go Home</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="javaScript.js"></script>
 </body>
+
 </html>
