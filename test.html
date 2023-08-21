@@ -1,0 +1,33 @@
+<div class="bg-slate-100 p-5">
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text font-bold text-2xl">Have coupon?</span>
+    </label>
+    <label class="input-group">
+      <input
+        type="text"
+        placeholder="Coupon code"
+        class="input input-bordered"
+        id="couponInput"
+      />
+      <!-- bg-[#E527B2] text-white -->
+      <button class="btn bg-[#E527B2] text-white px-5" id="applyButton" disabled>Apply</button>
+    </label>
+  </div>
+</div>
+
+<script>
+  const couponInput = document.getElementById("couponInput");
+  const applyButton = document.getElementById("applyButton");
+  const validCouponCode = "SELL200";
+
+  couponInput.addEventListener("input", () => {
+    const enteredCouponCode = couponInput.value.trim();
+
+    if (enteredCouponCode === validCouponCode) {
+      applyButton.removeAttribute("disabled");
+    } else {
+      applyButton.setAttribute("disabled", "true");
+    }
+  });
+</script>
